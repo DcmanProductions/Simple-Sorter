@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "simple-sorter",
+  "version": "${version}",
+  "name": "Simple Sorter",
+  "description": "A Simple Sorting Mod",
+  "authors": [
+    "Drew Chase"
+  ],
+  "contact": {
+  },
+  "license": "Apache 2.0",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "chase.minecraft.architectury.simplesorter.SimpleSorter"
+    ],
+    "client": [
+      "chase.minecraft.architectury.simplesorter.client.SimpleSorterClient"
+    ]
+  },
+  "mixins": [
+    "simple-sorter.mixins.json",
+    "simple-sorter-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.14",
+    "minecraft": ">=1.19.4"
+  }
+}
